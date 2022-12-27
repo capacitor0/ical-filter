@@ -1,10 +1,9 @@
-name = "opsgenie-filtered-schedule-ics"
-type = "javascript"
-zone_id = ""
-account_id = ""
-route = ""
-workers_dev = true
-compatibility_date = "2022-06-13"
+name = "icalendar-filter"
+main = "./src/index.ts"
+workers_dev = false
+compatibility_date = "2022-10-19"
+
+router = { pattern = "icalendar-filter.oziol.fr", custom_domain = true }
 
 [build]
 command = "npm install && npm run build"
